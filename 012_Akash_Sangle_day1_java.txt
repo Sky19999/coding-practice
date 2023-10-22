@@ -1,0 +1,411 @@
+1) accept two numbers and add them.
+
+sol:-
+
+public class EX01_ADD
+{
+	public static void main(String args[])
+	{
+		int num1 = new Scanner(System.in).nextInt();
+		int num2 = new Scanner(System.in).nextInt();
+		out.println("Additon of "+num1 +" + "+" num2 : "+(num1+num2));
+	}
+}
+
+
+2) accept two numbers and subtract them.
+
+sol:-
+
+import java.util.Scanner;
+import static java.lang.System.out;
+
+public class EX02_Sub
+{
+	public static void main(String args[])
+	{
+		int num1 = new Scanner(System.in).nextInt();
+		int num2 = new Scanner(System.in).nextInt();
+		out.println("Subtraction of "+num1 +" - "+" num2 : "+(num1-num2));
+	}
+}
+
+
+3) accept two numbers and multiply them.
+sol:-
+package Day_1;
+import java.util.*;
+
+public class EX03_Mul
+{
+
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter a Number: ");
+		int n = sc.nextInt();
+		
+		for (int i=1; i<=10; i++) 
+		{
+			System.out.println(n+"*"+i+"="+(n*i));
+		}
+		sc.close();
+	}
+}
+
+
+
+
+4) accept two numbers and divide them.
+sol:-
+import java.util.Scanner;
+import static java.lang.System.out;
+
+public class EX04_Div
+{
+	public static void main(String args[])
+	{
+		int num1 = new Scanner(System.in).nextInt();
+		int num2 = new Scanner(System.in).nextInt();
+		out.println("Division of "+num1 +" / "+" num2 : "+(num1/num2));
+	}
+}
+
+5) accept two numbers and check whether first number is greater or second number is greater or they are equal.
+sol:-
+import java.util.Scanner;
+import static java.lang.System.out;
+public class EX05_highst
+{
+	public static void main(String args[])
+	{
+		int num1 = new Scanner(System.in).nextInt();
+		int num2 = new Scanner(System.in).nextInt();
+		if(num1>num2)
+			out.println("num1 is greater than num2");
+		else if(num2>num1)
+			out.println("num2 is greater than num1");
+		else
+			out.println("num1 is equal to num2");
+	}
+}
+
+
+6) accept a number and check whether it is divisible by 3 or not.
+sol:-
+
+import java.util.Scanner;
+import static java.lang.System.out;
+public class EX06_Div3
+{
+	public static void main(String args[])
+	{
+		int num1 = new Scanner(System.in).nextInt();
+		if(num1%3==o)
+			out.println("num1 is divisible by 3");
+		else
+			out.println("num1 is not divisible by 3");
+	}
+}
+
+7) display a table of a particular number. 
+
+sol :-
+import java.util.Scanner;
+import static java.lang.System.out;
+
+public class EX07_Table 
+{
+
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter a Number: ");
+		int n = sc.nextInt();
+		
+		for (int i=1; i<=10; i++) 
+		{
+			System.out.println(n+"*"+i+"="+(n*i));
+		}
+		sc.close();
+	}
+}
+
+8) declare two numbers and one operator as a character. e.g. '+'
+using switch... case check which operator is declared and accordingly perform the action.
+
+sol :- 
+
+import java.util.Scanner;
+import static java.lang.System.out;
+public class EX08_Switch
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter 2 Numbers: ");
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		
+		System.out.println("Enter the operators from '+', '-', '*', '/', '%': ");
+		System.out.println("Enter an Operator: ");
+		int ch = sc.next().charAt(0);
+		System.out.println("Answer: ");
+		switch(ch) 
+		{
+			case '+' : System.out.println(a+b); 
+			break;
+			
+			case '-' : System.out.println(a-b); 
+			break;
+			
+			case '*' : System.out.println(a*b); 
+			break;
+			
+			case '/' : System.out.println(a/b); 
+			break;
+			
+			case '%' : System.out.println(a%b);
+			break;
+			
+			default : System.out.println("Enter Invalid Choice");
+		}
+		sc.close();
+	}
+}
+
+9) Display numbers  1 to 10 using loop
+
+sol:-
+
+import java.util.Scanner;
+import static java.lang.System.out;
+public class EX09_Disp10 
+{
+	public static void main(String[] args) 
+		{
+		         out.println("Numbers from 1 to 10: ");
+			for(int i=1; i<=10; i++) 
+			{
+				 out.print(" "+i);
+			}
+		}
+}
+
+10) Display numbers from 3 to 30 except number 24  using loop.
+
+sol:-
+
+import java.util.Scanner;
+import static java.lang.System.out;
+public class Ex10_Disp
+{
+	public static void main(String args[])
+	{
+		for(int i=3; i<30; i++)
+		{
+			if(i!==24)
+				out.println(i);
+		}
+	}
+}
+
+11) Using if  .else if .  Else,  display whether result is  fail, pass, second class , first class, Distinction etc.  
+
+sol:-
+
+import java.util.Scanner;
+import static java.lang.System.out;
+public class EX11_Per
+{
+	public static void main(String args[])
+	{
+		float percentage = new Scanner(System.in).nextFloat();
+		if(percentage>80.00)
+			out.println("Distinction");
+		else if(percentage<80.00 && percentage >60.00)
+			out.println("first class");
+		else if(percentage<70.00 && percentage>40.00)
+			out.println("second class");
+		else
+			out.println("fail");
+	}
+}
+
+12) display all prime numbers between 3 to 30
+import java.util.Scanner;
+import static java.lang.System.out;
+
+public class EX12_Prime
+{
+	static boolean isprime(int m)
+	{
+		if(m==3)
+			return true;
+		else if(m%2==0 && m%3==0)
+			return false;
+		else
+		{
+			for(int i=5; i*i<m; i+=6)
+			{
+				if(m%i==0 || m%(i+2))    
+					return false;
+				return true;
+			}
+		}
+	}
+
+	public static void main(String args[])
+	{
+		for(int i=3; i<30; i++)
+		{
+			if(isprime(i))
+				out.println(i);
+		}
+	}
+}
+
+13) using nested for loop display following :
+
+A  a
+A  b
+A  c
+
+B  a
+B  b
+B  c
+
+C  a
+C  b
+C  c
+
+sol -
+import java.util.Scanner;
+import static java.lang.System.out;
+
+public class EX13_patt1
+{
+	public static void main((String args[]))
+	{
+		for(int i=0; i<3; i++)
+		{
+			for(int j=0; j<3; j++)
+			{
+				out.println('A'+i+" "+'a'+j);
+			}
+		}
+	}
+}
+
+
+
+14) solve following patten programs:
+
+
+    * 
+   * * 
+  * * * 
+ * * * * 
+* * * * * 
+sol:-
+
+import java.util.Scanner;
+import static java.lang.System.out;
+
+public class EX14_patt2
+{
+	public static void main(String args[])
+	{
+		char c = '*';
+		for(int i=0; i<5 ; i++)
+		{
+			for(int j=0; j<5-1-i; j++)
+			{
+				out.println(" ");
+			}
+			for(int k=0; k<i ; K++)
+			{
+				out.println(c+" ");
+			}
+			out.println();
+		}
+	}
+}
+
+
+
+       * * * * 
+  	* * * 
+  	 * * 
+          * 
+sol:-
+import java.util.Scanner;
+import static java.lang.System.out;
+
+public class EX14_patt3
+{
+	public static void main(String args[])
+	{
+		char c = '*';
+		for(int i=1; i<5; i++)
+		{
+			for(int j=0; j<i+7; j++)
+			{
+				out.println(" ");
+			}
+			for(int k=0; k<5-i; K++)
+			{
+				out.println(c+" ");
+			}
+			out.println();
+		}
+	}
+}
+
+
+    * 
+   * * 
+  * * * 
+ * * * * 
+  * * * 
+   * * 
+    * 
+sol:-
+import java.util.Scanner;
+import static java.lang.System.out;
+public class Main(String args[])
+{
+	public static void main()
+	{
+		char c = '*';
+		for(int i=0; i<4 ; i++)
+		{
+			for(int j=0; j<5-1-i; j++)
+			{
+				out.println(" ");
+			}
+			for(int k=0; k<i ; K++)
+			{
+				out.println(c+" ");
+			}
+			out.println();
+		}
+	for(int i=4; i>0 ; i--)
+		{
+			for(int j=0; j<5-1-i; j++)
+			{
+				out.println(" ");
+			}
+			for(int k=0; k<i ; K++)
+			{
+				out.println(c+" ");
+			}
+			out.println();
+		}
+	}
+}
+
+
+
